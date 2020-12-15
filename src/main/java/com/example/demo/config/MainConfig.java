@@ -1,7 +1,14 @@
 package com.example.demo.config;
 
-public class MainConfig {
-    public static void main(String[] args){
+import com.example.demo.compent.Person;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
+public class MainConfig {
+
+    @Bean(name = "person2")
+    public Person person(){
+        return new Person();
     }
 }
