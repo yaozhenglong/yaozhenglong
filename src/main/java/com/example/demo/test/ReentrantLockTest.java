@@ -30,12 +30,13 @@ public class ReentrantLockTest {
         new Thread(() -> {
             String threadName = Thread.currentThread().getName();
             lock.modifyResources(threadName);
-
+            //modifyResources(threadName);
         },"Thread：姚正龙").start();
 
         new Thread(() -> {
             String threadName = Thread.currentThread().getName();
             lock.modifyResources(threadName);
+            //modifyResources(threadName);
         },"小龙女").start();
 
 
