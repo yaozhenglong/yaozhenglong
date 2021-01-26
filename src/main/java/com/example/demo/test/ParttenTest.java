@@ -9,37 +9,18 @@ public class ParttenTest {
 
         //隐藏手机号
         String testPhoneStr = "测试替换手机号18312793109哇哈哈18909801234欧米茄";
-        System.out.println("<<<手机号替换前:"+testPhoneStr);
+        System.out.println("手机号替换前:"+testPhoneStr);
         testPhoneStr  =	hideAllPhoneNum(testPhoneStr);
-        System.out.println("<<<手机号替换后:"+testPhoneStr);
+        System.out.println("手机号替换后:"+testPhoneStr);
 
         //隐藏身份证号
-        String testIDCardStr = "测试替换身份证号34012519920410182X兰博基尼55112519920410182X玛莎拉蒂";
-        System.out.println("<<<手机号替换前:"+testIDCardStr);
+        String testIDCardStr = "测试替换身份证号522128199102161515兰博基尼55112519920410182X玛莎拉蒂";
+        System.out.println("身份证号替换前:"+testIDCardStr);
         testIDCardStr  = hideAllIdCardNum(testIDCardStr);
-        System.out.println("<<<手机号替换后:"+testIDCardStr);
-//        Pattern pattern = Pattern.compile("(?<!\\d)(?:(?:1[34578]\\d{9})|(?:861[34578]\\d{9}))(?!\\d)");
-//        //String idPattern = "(^\\d{18}$)|(^\\d{15}$)";
-//        Pattern pattern2 = Pattern.compile("(^\\d{18}$)|(^\\d{15}$)");
-//
-//
-//        String string = "sdfUsf姚的方式地方 522128199102161515 userId :2342 iphone:13185152124 dfsfdsn的是非得失";
-//        //String idCard = Pattern.matches(REGEX_ID_CARD, idCard);
-//        Matcher matcher = pattern.matcher(string);
-//        StringBuffer bf = new StringBuffer(64);
-//        Matcher matcher1 = pattern2.matcher(string);
-//        while (matcher.find()) {
-////           bf.append(matcher.group()).append(",");
-//            System.out.println(matcher.group());
-//            string = string.replace(matcher.group(), matcher.group().substring(0,3)+"********");
-//            System.out.println(string);
-//        }
-//
-//        while (matcher1.find()){
-//            System.out.println(matcher1.group());
-//            //string = string.replace(matcher1.group(), matcher.group().substring(0,3)+"********");
-//            //System.out.println(string);
-//        }
+        System.out.println("身份证号替换后:"+testIDCardStr);
+
+
+
 
 
     }
